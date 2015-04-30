@@ -37,7 +37,7 @@
         color:grey;
       }
       i{
-        color:#F0EC1D;
+        color:#05F2C7;
         border-radius: 10px;
         padding:10px;
         margin:10px;
@@ -46,11 +46,29 @@
       }
       .container{
         height:100%;
+        max-width:800px;
+      }
+      
+      @media (max-width: 992px){
+        .left{
+          float:right;
+          margin-right:25px;
+        }
+        .right{
+          float:left;
+          margin-left:25px;   
+        }
+      }
+      .custom-icon{
+        max-height:80px;
       }
       .title{
         margin-top:10%;
         margin-bottom:2%;
         padding:10px;
+      }
+      .col-xs-6{
+        margin-top:25px;
       }
       .col-md-4{
         padding:0px;
@@ -76,37 +94,59 @@
 
 
       <div class="row linkrow">
-
-        <div class="col-md-4 text-center">
+        <div class="col-md-6 text-center">
             <div class="col-xs-6">
-              <a href="http://www.linkedin.com/in/MaggieAHewitt"><i class="fa fa-linkedin fa-5x"></i><br/>Linked In</a>
+              <div class="left">
+                <a href="http://www.linkedin.com/in/MaggieAHewitt"><i class="fa fa-linkedin fa-5x"></i><br/>Linked In</a>
+              </div>
             </div>
             <div class="col-xs-6">
-              <a href="ResumeMaggieAHewitt_Web.pdf"><i class="fa fa-file fa-5x"></i><br/>Resume PDF</a>
+              <div class="right">
+                <a href="ResumeMaggieAHewitt_Web.pdf"><i class="fa fa-file fa-5x"></i><br/>Resume PDF</a>
+              </div>
             </div>
         </div>
 
-        <div class="col-md-4 text-center">
+        <div class="col-md-6 text-center">
           <div class="col-xs-6">
-            <a href="http://maggieahewitt.pythonanywhere.com/"><i class="fa fa-music fa-5x"></i><br/>AUDITION AID</a>
+            <div class="left">
+              <a href="http://maggieahewitt.pythonanywhere.com/"><i class="fa fa-music fa-5x"></i><br/>Audition Aid</a>
+            </div>
           </div>
 
           <div class="col-xs-6">
-            <a href="https://github.com/MaggieAHewitt"><i class="fa fa-github fa-5x"></i><br/>GitHub</a>
+            <div class="right">
+              <a href="clover/index.html"><i class="fa fa-5x"><img src="media/Clover_Logo_Blue.png" class="custom-icon"/></i><br/>Clover AR</a>
+            </div>
           </div>
         </div>
-
-        <div class="col-md-4 text-center">
-          <div class="col-xs-6">
-            <a href="https://www.facebook.com/maggie.hewitt1"><i class="fa fa-facebook fa-5x"></i><br/>Facebook</a>
-          </div>
-          <div class="col-xs-6">
-            <a href="https://twitter.com/HanDefShotFirst"><i class="fa fa-twitter fa-5x"></i><br/>Twitter</a>
-          </div>
-        </div>
-
-      </div>
     </div>
+
+    <div class="row linkrow">
+        <div class="col-md-6 text-center">
+          <div class="col-xs-6">
+            <div class="left">
+              <a href="https://github.com/MaggieAHewitt"><i class="fa fa-github fa-5x"></i><br/>GitHub</a>
+            </div>
+          </div>
+          <div class="col-xs-6">
+            <div class="right">
+              <a href="https://www.facebook.com/maggie.hewitt1"><i class="fa fa-facebook fa-5x"></i><br/>Facebook</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 text-center">
+          <div class="col-xs-6">
+            <div class="left">
+              <a href="https://twitter.com/HanDefShotFirst"><i class="fa fa-twitter fa-5x"></i><br/>Twitter</a>
+            </div>
+          </div>
+          <div class="col-xs-6">
+          </div>
+        </div>
+    </div>
+  </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
